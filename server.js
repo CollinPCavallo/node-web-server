@@ -60,7 +60,13 @@ app.get('/contact', (req, res) => {
         pageTitle: 'Contact Page',
         welcomeMessage: 'Contact me here!'
     })
-})
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Project Page'
+    })
+});
 
 
 app.listen(port, () => {
